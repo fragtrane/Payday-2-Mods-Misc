@@ -1,0 +1,15 @@
+{
+	"name" : "No Titan Cams",
+	"description" : "Blocks the mission script elements that set Titan Cameras.",
+	"author" : "fragtrane",
+	"contact" : "GitHub: github.com/fragtrane, Steam: id/fragtrane, Reddit: /u/fragtrane",
+	"version" : "0.1",
+	"priority" : 0,
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "core/lib/managers/mission/coreelementunitsequence",
+			"script_path" : "lua/coreelementunitsequence.lua"
+		}
+	]
+}
