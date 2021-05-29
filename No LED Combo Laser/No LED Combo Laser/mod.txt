@@ -1,0 +1,15 @@
+{
+	"name" : "No LED Combo Laser",
+	"description" : "Disables the laser on the LED Combo.",
+	"author" : "fragtrane",
+	"contact" : "GitHub: github.com/fragtrane, Steam: id/fragtrane, Reddit: /u/fragtrane",
+	"version" : "0.1",
+	"priority" : 0,
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "lib/units/weapons/newraycastweaponbase",
+			"script_path" : "lua/newraycastweaponbase.lua"
+		}
+	]
+}
