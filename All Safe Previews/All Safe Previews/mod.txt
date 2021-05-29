@@ -1,0 +1,27 @@
+{
+	"name" : "All Safe Previews",
+	"description" : "Allow all skins from all safes to be previewed from the Steam Inventory menu.",
+	"author" : "fragtrane",
+	"contact" : "GitHub: github.com/fragtrane, Steam: id/fragtrane, Reddit: /u/fragtrane",
+	"version" : "0.1",
+	"priority" : 0,
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "lua/setup.lua"
+		},
+		{
+			"hook_id" : "lib/tweak_data/economytweakdata",
+			"script_path" : "lua/economytweakdata.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menu/renderers/menunodecrimenetgui",
+			"script_path" : "lua/menunodecrimenetgui.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menu/menuscenemanager",
+			"script_path" : "lua/menuscenemanager.lua"
+		}
+	]
+}
